@@ -1,10 +1,7 @@
 ﻿using EmailSender.API.Data.Interfaces;
 using EmailSender.API.Domain.Entities;
-using RestSharp;
-using RestSharp.Authenticators;
-using System.Net;
-using System.Net.Http.Headers;
-using System.Text.Json;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace EmailSender.API.Data.Services
 {
@@ -12,30 +9,21 @@ namespace EmailSender.API.Data.Services
     {
         //private readonly string API_KEY = Environment.GetEnvironmentVariable("API_KEY");
         //private readonly string DOMAIN = Environment.GetEnvironmentVariable("DOMAIN");
+        //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
 
-        public void SendEmail(EmailEntity email)
-        {   RestClient client = new RestClient();
+        public async Task<Response> SendEmail(EmailEntity email)
+        {
 
-            client.BaseUrl = new Uri("https://api.mailgun.net/v3/");
-            client.Authenticator = new HttpBasicAuthenticator("api", "b080e4ea58187ed0343fbb9790021488-ed54d65c-63c7ca3d");
-
-            var request = new RestRequest();
-
-            request.AddParameter("domain", "sandbox13dfa4de0ffb4cf98dc40ea9ccf65664.mailgun.org", ParameterType.UrlSegment);
-
-            request.Resource = "/messages";
-            request.AddParameter("from", "IBNT");
-            request.AddParameter("to", $"{email.ReceiverEmailAddress}");
-            request.AddParameter("subject", "TESTE");
-            request.AddParameter("text", $"{email.EmailContent}");
-
-            request.Method = Method.POST;
-            var response = client.Execute(request);
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                var responseContent = response.Content;
-                Console.WriteLine(responseContent);
-            }
+            var apiKey = "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";
+            var client = new SendGridClient(apiKey);
+            var from = new EmailAddress(email.SenderEmailAddress, email.SenderName);
+            var subject = email.EmailSubject;
+            var to = new EmailAddress(email.ReceiverEmailAddress, email.ReceiverName);
+            var plainTextContent = email.EmailContent;
+            var htmlContent = $"<strong>{email.EmailContent}</strong>";
+            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+            var response = await client.SendEmailAsync(msg);
+            return response;
         }
     }
 }

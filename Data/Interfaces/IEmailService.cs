@@ -1,9 +1,10 @@
 ﻿using EmailSender.API.Domain.Entities;
+using SendGrid;
 
 namespace EmailSender.API.Data.Interfaces
 {
     public interface IEmailService
     {
-        public void SendEmail(EmailEntity email);
+        public Task<Response> SendEmail(EmailEntity email);
     }
 }

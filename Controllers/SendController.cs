@@ -16,11 +16,18 @@ namespace EmailSender.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendEmail([FromBody] SendEmailDto dto)
+        public async Task<IActionResult> SendEmail([FromBody] SendEmailDto dto)
         {
-            var newEmail = new EmailEntity(dto.ReceiverEmailAddress,dto.EmailContent);
-            _service.SendEmail(newEmail);
-            return Ok();
+            var newEmail = new EmailEntity(
+                dto.SenderEmailAddress,
+                dto.ReceiverEmailAddress,
+                dto.SenderName,
+                dto.ReceiverName,
+                dto.EmailSubject,
+                dto.EmailContent
+             );
+            var response = await _service.SendEmail(newEmail);
+            return Ok(response.Body.ReadAsStringAsync());
         }
     }
 }

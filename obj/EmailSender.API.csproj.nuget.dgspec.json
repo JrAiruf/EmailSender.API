@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
+    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
+    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "projectUniqueName": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
         "projectName": "EmailSender.API",
-        "projectPath": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "projectPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\obj\\",
+        "outputPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.5.1, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
