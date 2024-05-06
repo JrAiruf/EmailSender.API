@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
+    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
+    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
         "projectName": "EmailSender.API",
-        "projectPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +50,10 @@
               "target": "Package",
               "version": "[106.5.1, )"
             },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -77,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
