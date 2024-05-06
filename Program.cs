@@ -7,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 var restClient = builder.Configuration.Get<RestClient>();
 
 builder.Services.AddScoped<IEmailService, EmailService>();
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
+builder.WebHost.UseUrls($"http://*[::1]:{port}");
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
