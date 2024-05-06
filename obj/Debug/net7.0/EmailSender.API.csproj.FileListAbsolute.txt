@@ -69,3 +69,6 @@ C:\Users\Hp\Documents\APIs\Microservices\EmailSender.API\obj\Debug\net7.0\ref\Em
 C:\Users\Hp\Documents\APIs\Microservices\EmailSender.API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Hp\Documents\APIs\Microservices\EmailSender.API\bin\Debug\net7.0\SendGrid.dll
 C:\Users\Hp\Documents\APIs\Microservices\EmailSender.API\bin\Debug\net7.0\StarkbankEcdsa.dll
+C:\Users\DELL\Documents\backend\Microservices\EmailSender.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DELL\Documents\backend\Microservices\EmailSender.API\bin\Debug\net7.0\SendGrid.dll
+C:\Users\DELL\Documents\backend\Microservices\EmailSender.API\bin\Debug\net7.0\StarkbankEcdsa.dll

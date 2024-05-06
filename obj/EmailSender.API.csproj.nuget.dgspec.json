@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
+    "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Documents\\APIs\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
+    "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
         "projectName": "EmailSender.API",
-        "projectPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
