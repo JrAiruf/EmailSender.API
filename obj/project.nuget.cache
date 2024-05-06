@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "luVgeH1hrx4ZgKKoVSUhqNaPhY0XiyRM3WDW/zix5xgdpxICTJCP8LHQL4H3EBlI1ONN00jxN4mgFjEAmIVxZg==",
+  "dgSpecHash": "O1zHJMy3Yk5Bu9J8rJpdSJAKwne7e6of2N/5ueB2z8ZfX8HwCTF7NWF5imlT8KP0ktoeRZhOtrvrzmD02KE9JA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\backend\\Microservices\\EmailSender.API\\EmailSender.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
