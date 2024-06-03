@@ -1,6 +1,6 @@
 # EmailSender.API
 
-## So Descritive 😅
+## By Juninho Silva 
 
 ### A Microservice to use whenever an e-mail needs to be sended.
 
